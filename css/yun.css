@@ -1,0 +1,25 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/01.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+.div1{
+	margin-top: 400px;
+
+
+}
+
+a{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(0, 255, 34);
+    font-size: 50px;
+    text-decoration:none;  
+
+}

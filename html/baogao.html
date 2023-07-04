@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>《Web应用基础》课程结业报告</h1>
+    <h2>开发项目</h2>
+    <p>我的网页时关于游戏《云顶之奕》的一些介绍，描述了云顶之奕的一些相关信息，如云顶之奕的由来，云顶之奕的一些英雄，整容等</p>
+    <h2>遇到的问题</h2>
+
+<h3> 1.怎么将背景图片透明化</h3>
+
+        <p>  我尝试了很多种方法，比如将图片模糊和设置图片的透明度等，但文本显示都不理想，不能清晰的看出内容
+    </p>
+<h3>解决方法</h3>
+<p>我在需要显示的文本外新加了一个div,将div背景颜色设置为白色，调整位置，使它在中间覆盖图片，显示文字</p>
+<h3>2.怎么将按钮设置在页面右下角</h3>
+<p>
+    我先尝试了margin-right,margin-bottom,并不能让按钮显示在我想要的位置。
+</p>   
+<h2>
+    解决方法
+</h2> 
+<p>
+    发现原因是没有设置父类，然后我就采用了position：absolute生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+    但又有新问题，按钮会和页面一起向上移动，最后我发现应该用position：fixed 生成绝对定位的元素，相对于浏览器窗口进行定位。
+    这样按钮就会一直在我想要的位置。
+</p>
+<h3>按钮跳转问题</h3>
+<p>我之前一直是在按钮里加一个a href链接，但我发现不点到链接文字就无法跳转，要美观还要将链接标识去掉，所以我找到了一个新方法，button的onclick
+    方法，点击按钮出发Javascript事件，实现跳转。
+</p>
+<h2>总结</h2>
+<p>经过这段时间的独立学习完成项目，在web开发中学习到很多经验，比如使用grid布局的使用，虽然我没有在web结业项目里使用，但这将为我在今后的学习中提供帮助。</p>
+</body>
+</html>
